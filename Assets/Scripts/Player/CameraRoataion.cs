@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class CameraRoataion : MonoBehaviour
 {
+    //rotate the player and the camera rotates because it's the player's child
+    #region
     private Vector3 firstpoint; //change type on Vector3
     private Vector3 secondpoint;
     private float xAngle = 0.0f; //angle for axes x for rotation
     private float yAngle = 0.0f;
     private float xAngTemp = 0.0f; //temp variable for angle
     private float yAngTemp = 0.0f;
+    #endregion
+
     void Start()
     {
         //Initialization our angles of camera
